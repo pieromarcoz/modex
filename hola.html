@@ -1,0 +1,169 @@
+<button id="myBtn">Abrir Modal</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Inicio de sesión / Registro</h2>
+        <hr class="active-border">
+      </div>
+      <div class="modal-body">
+        <div id="login" class="tabcontent">
+          <h3>Iniciar sesión</h3>
+          <form>
+            <!-- Formulario para iniciar sesión -->
+          </form>
+        </div>
+        <div id="signup" class="tabcontent">
+          <h3>Registrarse</h3>
+          <form>
+            <!-- Formulario para registrarse -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <style>
+/* Estilos del modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  margin: 10% auto;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.modal-body {
+  padding-top: 20px;
+}
+
+/* Estilos de las pestañas */
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tab button:hover {
+  border-bottom: 2px solid #007bff;
+}
+
+.tab button.active {
+  border-bottom: 2px solid #007bff;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  height: calc(100% - 55px);
+  overflow-y: auto;
+}
+
+.active-border {
+  border-bottom: 2px solid #007bff;
+}
+
+
+  </style>
+
+  <script>
+// Obtener el modal
+var modal = document.getElementById("myModal");
+
+// Obtener los botones de las pestañas
+var btns = document.getElementsByClassName("tablinks");
+
+// Obtener el contenido de las pestañas
+var tabcontents = document.getElementsByClassName("tabcontent");
+
+// Función para abrir la pestaña seleccionada
+function openTab(evt, tabName) {
+  // Ocultar todos los contenidos de las pestañas
+  for (var i = 0; i < tabcontents.length; i++) {
+    tabcontents[i].style.display = "none";
+  }
+  
+  // Quitar la clase "active" de todos los botones de las pestañas
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].className = btns[i].className.replace(" active", "");
+  }
+  
+  // Mostrar el contenido de la pestaña seleccionada y marcar el botón como activo
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+  
+  // Cambiar el tamaño del modal de acuerdo a la pestaña seleccionada
+  if (tabName == "login") {
+    modal.style.maxWidth = "610px";
+    modal.style.height = "573px";
+  } else if (tabName == "signup") {
+    modal.style.maxWidth = "870px";
+    modal.style.height = "757px";
+  }
+}
+
+// Agregar el evento "click" a los botones de las pestañas
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    openTab(event, this.id);
+  });
+}
+
+// Obtener el botón para abrir el modal y agregar el evento "click"
+var btn = document.getElementById("myBtn");
+btn.addEventListener("click", function() {
+  modal.style.display = "block";
+});
+
+// Obtener el botón para cerrar el modal y agregar el evento "click"
+var close = document.getElementsByClassName("close")[0];
+close.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+// Cerrar el modal cuando el usuario hace clic fuera del contenido
+window.addEventListener("click", function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
+
+  </script>

@@ -1,0 +1,230 @@
+:root {
+    --primary-color: #E4002B;
+    --fondo-color: #E4E8E9;
+    --header-color: #656363;
+    --gris-color: #626262;
+}
+@font-face{
+    font-family: 'Bree Bold Obloque';
+    src: url('../font/Bree\ Bold\ Oblique.otf');
+}
+@font-face{
+    font-family: 'Bree Bold';
+    src: url('../font/Bree\ Bold.otf');
+}
+@font-face{
+    font-family: 'Bree ExtraBold Oblique';
+    src: url('../font/Bree\ ExtraBold\ Oblique.otf');
+}
+@font-face{
+    font-family: 'Bree ExtraBold';
+    src: url('../font/Bree\ ExtraBold.otf');
+}
+@font-face{
+    font-family: 'Bree Light Oblique';
+    src: url('../font/Bree\ Light\ Oblique.otf');
+}
+@font-face{
+    font-family: 'Bree Light';
+    src: url('../font/Bree\ Light.otf');
+}
+@font-face{
+    font-family: 'Bree Oblique';
+    src: url('../font/Bree\ Oblique.otf');
+}
+@font-face{
+    font-family: 'Bree Regular';
+    src: url('../font/Bree\ Regular.otf');
+}
+.font-bold{
+    font-family: 'Bree Bold';
+    font-weight: 700;
+}
+p, span .font-secundary{
+    font-family: 'Montserrat';
+    color: #000000;
+}
+span{
+    font-weight: 700;
+}
+.max-w-sm{
+    max-width: 390px;
+}
+.text-gris-p{
+    color: var(--gris-color);
+}
+.bg-color-fondo{
+    background-color: var(--fondo-color);
+}
+header{
+    background-color: var(--header-color);
+    height: 76px;
+}
+footer{
+    background-color: var(--primary-color);
+    height: 70px;
+}
+.btn--primary{
+    background-color: var(--primary-color);
+    border: none;
+    width: 259px;
+    height: 50px;
+    background: #E4002B;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.enlace--footer{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.enlace--footer:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.bg__hero{
+    background-image: url("../img/bg_hero_.png");
+    height: 627px;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+@media (max-width: 767px){
+    .bg__hero{
+        background-image: url("../img/img_hero_mobile.png");
+        height: 560px;
+        background-position: center center;
+    }
+    .img_modex_planex{
+        width: 325px;
+        height: 238px;
+    }
+    footer{
+        height: 238px;
+    }
+    .grid-col-2{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-col-2 .last {
+        grid-column: 1 / span 2;
+    }
+}
+#after-main{
+    content: '';
+    display: flex;
+    min-width: 4px;
+    height: 37px;
+    margin: -12px 5px 0 0;
+    background-color: #E4002B;
+    padding: 0;
+    margin-left: -10px;
+}
+#after-main-horizontal{
+    content: '';
+    display: flex;
+    max-width: 37px;
+    height: 4px;
+    margin: 0 auto 10px auto;
+    background-color: #E4002B;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MODAL*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; 
+  }
+  
+  .tab {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 20px;
+    width: 50%;
+  }
+  
+  .tab button.active {
+    border-bottom: 2px solid #000;
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  
+  .tabcontent.active {
+    display: block;
+  }

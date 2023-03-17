@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Hoja de estilo -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="d-flex justify-content-between px-4 px-md-5">
+        <div></div>
+        <div class="d-flex align-items-center gap-3 gap-md-4">
+            <img src="img/icon_user.png" alt="" style="width: 27px; height: 27px;">
+            <img src="img/icon_dropd.png" alt="" style="height: 21px; width: 26px; ">
+        </div>
+    </header>
+    <div class="bg__hero d-flex align-items-end align-items-md-center pb-5 pb-md-0 px-3 px-md-0">
+        <div class="container">
+            <div class="max-w-sm d-block">
+                <h1 class="font-bold text-white">Lorem Ipsum dolor sit amet consectetur</h1>
+                <p class="font-secundary text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque laoreet urna dui, eget consequat odio ornare in. Pellentesque ut elit fermentum,
+                    interdum augue vel, ornare ante</p>
+                <button class="btn--primary" onclick="showModal()">Ingresar a Modex</button>
+            </div>
+        </div>
+    </div>
+    <section class="bg-color-fondo">
+        <div class="container">
+            <div class="d-block d-md-flex px-4 py-5 md:p-5 gap-5">
+                <div class="order-1 order-md-2"> <!-- Cambia el orden en dispositivos móviles -->
+                    <div class="d-flex align-items-center">
+                        <div id="after-main"></div>
+                        <h2 class="font-bold text-gris-p mb-3">¿Que es la PlanEX y ModEx</h2>
+                    </div>
+                    <p>
+                        <span class="font-weight-bold">Planex asiste a empresas medianas y pequeñas en el uso de
+                            herramientas de planificación,</span> para convertirse en exportadoras regulares,
+                        diversificando sus mercados e incrementando el valor de sus exportaciones. Las empresas
+                        desarrollan un Plan Exportador que será el documento maestro en el cual se expliciten las
+                        acciones necesarias para lograr un mejor desempeño en los mercados internacionales.
+                    </p>
+                    <p>
+                        Mediante Planex el empresario podrá demostrar <span>la viabilidad económica y financiera de su
+                            idea de negocio,</span> respaldar con un documento técnico las solicitudes de financiamiento
+                        a bancos, atraer inversionistas, organizar las actividades de comercialización en un conjunto
+                        coherente y contar con una guía para el seguimiento y autoevaluación de la empresa en su
+                        conjunto.
+                    </p>
+                </div>
+                <div class="order-2 order-md-1"> <!-- Cambia el orden en dispositivos móviles -->
+                    <img class="img_modex_planex" src="img/img-planex-modex.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container py-5">
+            <div class="d-block">
+                <div id="after-main-horizontal"></div>
+                <h2 class="font-bold mb-4 text-center">Objetivos del programa ModEx</h2>
+            </div>
+            <div class="d-md-flex gap-5 pt-3">
+                <div class="text-center">
+                    <svg class="mb-2" width="79" height="79" viewBox="0 0 79 79" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="39.5" cy="39.5" r="39.5" fill="#E4002B" />
+                        <path
+                            d="M50.8 48.46V51.7C50.8 51.94 50.89 52.15 51.07 52.33C51.25 52.51 51.46 52.6 51.7 52.6C51.94 52.6 52.15 52.51 52.33 52.33C52.51 52.15 52.6 51.94 52.6 51.7V46.3C52.6 46.06 52.51 45.85 52.33 45.67C52.15 45.49 51.94 45.4 51.7 45.4H46.3C46.06 45.4 45.85 45.49 45.67 45.67C45.49 45.85 45.4 46.06 45.4 46.3C45.4 46.54 45.49 46.75 45.67 46.93C45.85 47.11 46.06 47.2 46.3 47.2H49.54L45.13 51.61C44.95 51.79 44.86 52 44.86 52.24C44.86 52.48 44.95 52.69 45.13 52.87C45.31 53.05 45.52 53.14 45.76 53.14C46 53.14 46.21 53.05 46.39 52.87L50.8 48.46ZM25.6 54.4C24.61 54.4 23.7622 54.0472 23.0566 53.3416C22.351 52.636 21.9988 51.7888 22 50.8V25.6C22 24.61 22.3528 23.7622 23.0584 23.0566C23.764 22.351 24.6112 21.9988 25.6 22H50.8C51.79 22 52.6378 22.3528 53.3434 23.0584C54.049 23.764 54.4012 24.6112 54.4 25.6V37.66C53.83 37.39 53.245 37.1572 52.645 36.9616C52.045 36.766 51.43 36.6238 50.8 36.535V25.6H25.6V50.8H36.49C36.58 51.46 36.7228 52.09 36.9184 52.69C37.114 53.29 37.3462 53.86 37.615 54.4H25.6ZM25.6 49V50.8V25.6V36.535V36.4V49ZM29.2 45.4C29.2 45.91 29.3728 46.3378 29.7184 46.6834C30.064 47.029 30.4912 47.2012 31 47.2H36.535C36.625 46.57 36.7678 45.955 36.9634 45.355C37.159 44.755 37.3762 44.17 37.615 43.6H31C30.49 43.6 30.0622 43.7728 29.7166 44.1184C29.371 44.464 29.1988 44.8912 29.2 45.4ZM29.2 38.2C29.2 38.71 29.3728 39.1378 29.7184 39.4834C30.064 39.829 30.4912 40.0012 31 40H40.18C41.14 39.1 42.2128 38.35 43.3984 37.75C44.584 37.15 45.8512 36.745 47.2 36.535C46.93 36.475 46.63 36.4372 46.3 36.4216C45.97 36.406 45.67 36.3988 45.4 36.4H31C30.49 36.4 30.0622 36.5728 29.7166 36.9184C29.371 37.264 29.1988 37.6912 29.2 38.2ZM29.2 31C29.2 31.51 29.3728 31.9378 29.7184 32.2834C30.064 32.629 30.4912 32.8012 31 32.8H45.4C45.91 32.8 46.3378 32.6272 46.6834 32.2816C47.029 31.936 47.2012 31.5088 47.2 31C47.2 30.49 47.0272 30.0622 46.6816 29.7166C46.336 29.371 45.9088 29.1988 45.4 29.2H31C30.49 29.2 30.0622 29.3728 29.7166 29.7184C29.371 30.064 29.1988 30.4912 29.2 31ZM49 58C46.51 58 44.3872 57.1222 42.6316 55.3666C40.876 53.611 39.9988 51.4888 40 49C40 46.51 40.8778 44.3872 42.6334 42.6316C44.389 40.876 46.5112 39.9988 49 40C51.49 40 53.6128 40.8778 55.3684 42.6334C57.124 44.389 58.0012 46.5112 58 49C58 51.49 57.1222 53.6128 55.3666 55.3684C53.611 57.124 51.4888 58.0012 49 58Z"
+                            fill="white" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="text-center">
+                    <svg class="mb-2" width="79" height="79" viewBox="0 0 79 79" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="39.5" cy="39.5" r="39.5" fill="#E4002B" />
+                        <path
+                            d="M50.8 48.46V51.7C50.8 51.94 50.89 52.15 51.07 52.33C51.25 52.51 51.46 52.6 51.7 52.6C51.94 52.6 52.15 52.51 52.33 52.33C52.51 52.15 52.6 51.94 52.6 51.7V46.3C52.6 46.06 52.51 45.85 52.33 45.67C52.15 45.49 51.94 45.4 51.7 45.4H46.3C46.06 45.4 45.85 45.49 45.67 45.67C45.49 45.85 45.4 46.06 45.4 46.3C45.4 46.54 45.49 46.75 45.67 46.93C45.85 47.11 46.06 47.2 46.3 47.2H49.54L45.13 51.61C44.95 51.79 44.86 52 44.86 52.24C44.86 52.48 44.95 52.69 45.13 52.87C45.31 53.05 45.52 53.14 45.76 53.14C46 53.14 46.21 53.05 46.39 52.87L50.8 48.46ZM25.6 54.4C24.61 54.4 23.7622 54.0472 23.0566 53.3416C22.351 52.636 21.9988 51.7888 22 50.8V25.6C22 24.61 22.3528 23.7622 23.0584 23.0566C23.764 22.351 24.6112 21.9988 25.6 22H50.8C51.79 22 52.6378 22.3528 53.3434 23.0584C54.049 23.764 54.4012 24.6112 54.4 25.6V37.66C53.83 37.39 53.245 37.1572 52.645 36.9616C52.045 36.766 51.43 36.6238 50.8 36.535V25.6H25.6V50.8H36.49C36.58 51.46 36.7228 52.09 36.9184 52.69C37.114 53.29 37.3462 53.86 37.615 54.4H25.6ZM25.6 49V50.8V25.6V36.535V36.4V49ZM29.2 45.4C29.2 45.91 29.3728 46.3378 29.7184 46.6834C30.064 47.029 30.4912 47.2012 31 47.2H36.535C36.625 46.57 36.7678 45.955 36.9634 45.355C37.159 44.755 37.3762 44.17 37.615 43.6H31C30.49 43.6 30.0622 43.7728 29.7166 44.1184C29.371 44.464 29.1988 44.8912 29.2 45.4ZM29.2 38.2C29.2 38.71 29.3728 39.1378 29.7184 39.4834C30.064 39.829 30.4912 40.0012 31 40H40.18C41.14 39.1 42.2128 38.35 43.3984 37.75C44.584 37.15 45.8512 36.745 47.2 36.535C46.93 36.475 46.63 36.4372 46.3 36.4216C45.97 36.406 45.67 36.3988 45.4 36.4H31C30.49 36.4 30.0622 36.5728 29.7166 36.9184C29.371 37.264 29.1988 37.6912 29.2 38.2ZM29.2 31C29.2 31.51 29.3728 31.9378 29.7184 32.2834C30.064 32.629 30.4912 32.8012 31 32.8H45.4C45.91 32.8 46.3378 32.6272 46.6834 32.2816C47.029 31.936 47.2012 31.5088 47.2 31C47.2 30.49 47.0272 30.0622 46.6816 29.7166C46.336 29.371 45.9088 29.1988 45.4 29.2H31C30.49 29.2 30.0622 29.3728 29.7166 29.7184C29.371 30.064 29.1988 30.4912 29.2 31ZM49 58C46.51 58 44.3872 57.1222 42.6316 55.3666C40.876 53.611 39.9988 51.4888 40 49C40 46.51 40.8778 44.3872 42.6334 42.6316C44.389 40.876 46.5112 39.9988 49 40C51.49 40 53.6128 40.8778 55.3684 42.6334C57.124 44.389 58.0012 46.5112 58 49C58 51.49 57.1222 53.6128 55.3666 55.3684C53.611 57.124 51.4888 58.0012 49 58Z"
+                            fill="white" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="text-center">
+                    <svg class="mb-2" width="79" height="79" viewBox="0 0 79 79" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="39.5" cy="39.5" r="39.5" fill="#E4002B" />
+                        <path
+                            d="M50.8 48.46V51.7C50.8 51.94 50.89 52.15 51.07 52.33C51.25 52.51 51.46 52.6 51.7 52.6C51.94 52.6 52.15 52.51 52.33 52.33C52.51 52.15 52.6 51.94 52.6 51.7V46.3C52.6 46.06 52.51 45.85 52.33 45.67C52.15 45.49 51.94 45.4 51.7 45.4H46.3C46.06 45.4 45.85 45.49 45.67 45.67C45.49 45.85 45.4 46.06 45.4 46.3C45.4 46.54 45.49 46.75 45.67 46.93C45.85 47.11 46.06 47.2 46.3 47.2H49.54L45.13 51.61C44.95 51.79 44.86 52 44.86 52.24C44.86 52.48 44.95 52.69 45.13 52.87C45.31 53.05 45.52 53.14 45.76 53.14C46 53.14 46.21 53.05 46.39 52.87L50.8 48.46ZM25.6 54.4C24.61 54.4 23.7622 54.0472 23.0566 53.3416C22.351 52.636 21.9988 51.7888 22 50.8V25.6C22 24.61 22.3528 23.7622 23.0584 23.0566C23.764 22.351 24.6112 21.9988 25.6 22H50.8C51.79 22 52.6378 22.3528 53.3434 23.0584C54.049 23.764 54.4012 24.6112 54.4 25.6V37.66C53.83 37.39 53.245 37.1572 52.645 36.9616C52.045 36.766 51.43 36.6238 50.8 36.535V25.6H25.6V50.8H36.49C36.58 51.46 36.7228 52.09 36.9184 52.69C37.114 53.29 37.3462 53.86 37.615 54.4H25.6ZM25.6 49V50.8V25.6V36.535V36.4V49ZM29.2 45.4C29.2 45.91 29.3728 46.3378 29.7184 46.6834C30.064 47.029 30.4912 47.2012 31 47.2H36.535C36.625 46.57 36.7678 45.955 36.9634 45.355C37.159 44.755 37.3762 44.17 37.615 43.6H31C30.49 43.6 30.0622 43.7728 29.7166 44.1184C29.371 44.464 29.1988 44.8912 29.2 45.4ZM29.2 38.2C29.2 38.71 29.3728 39.1378 29.7184 39.4834C30.064 39.829 30.4912 40.0012 31 40H40.18C41.14 39.1 42.2128 38.35 43.3984 37.75C44.584 37.15 45.8512 36.745 47.2 36.535C46.93 36.475 46.63 36.4372 46.3 36.4216C45.97 36.406 45.67 36.3988 45.4 36.4H31C30.49 36.4 30.0622 36.5728 29.7166 36.9184C29.371 37.264 29.1988 37.6912 29.2 38.2ZM29.2 31C29.2 31.51 29.3728 31.9378 29.7184 32.2834C30.064 32.629 30.4912 32.8012 31 32.8H45.4C45.91 32.8 46.3378 32.6272 46.6834 32.2816C47.029 31.936 47.2012 31.5088 47.2 31C47.2 30.49 47.0272 30.0622 46.6816 29.7166C46.336 29.371 45.9088 29.1988 45.4 29.2H31C30.49 29.2 30.0622 29.3728 29.7166 29.7184C29.371 30.064 29.1988 30.4912 29.2 31ZM49 58C46.51 58 44.3872 57.1222 42.6316 55.3666C40.876 53.611 39.9988 51.4888 40 49C40 46.51 40.8778 44.3872 42.6334 42.6316C44.389 40.876 46.5112 39.9988 49 40C51.49 40 53.6128 40.8778 55.3684 42.6334C57.124 44.389 58.0012 46.5112 58 49C58 51.49 57.1222 53.6128 55.3666 55.3684C53.611 57.124 51.4888 58.0012 49 58Z"
+                            fill="white" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="text-center">
+                    <svg class="mb-2" width="79" height="79" viewBox="0 0 79 79" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="39.5" cy="39.5" r="39.5" fill="#E4002B" />
+                        <path
+                            d="M50.8 48.46V51.7C50.8 51.94 50.89 52.15 51.07 52.33C51.25 52.51 51.46 52.6 51.7 52.6C51.94 52.6 52.15 52.51 52.33 52.33C52.51 52.15 52.6 51.94 52.6 51.7V46.3C52.6 46.06 52.51 45.85 52.33 45.67C52.15 45.49 51.94 45.4 51.7 45.4H46.3C46.06 45.4 45.85 45.49 45.67 45.67C45.49 45.85 45.4 46.06 45.4 46.3C45.4 46.54 45.49 46.75 45.67 46.93C45.85 47.11 46.06 47.2 46.3 47.2H49.54L45.13 51.61C44.95 51.79 44.86 52 44.86 52.24C44.86 52.48 44.95 52.69 45.13 52.87C45.31 53.05 45.52 53.14 45.76 53.14C46 53.14 46.21 53.05 46.39 52.87L50.8 48.46ZM25.6 54.4C24.61 54.4 23.7622 54.0472 23.0566 53.3416C22.351 52.636 21.9988 51.7888 22 50.8V25.6C22 24.61 22.3528 23.7622 23.0584 23.0566C23.764 22.351 24.6112 21.9988 25.6 22H50.8C51.79 22 52.6378 22.3528 53.3434 23.0584C54.049 23.764 54.4012 24.6112 54.4 25.6V37.66C53.83 37.39 53.245 37.1572 52.645 36.9616C52.045 36.766 51.43 36.6238 50.8 36.535V25.6H25.6V50.8H36.49C36.58 51.46 36.7228 52.09 36.9184 52.69C37.114 53.29 37.3462 53.86 37.615 54.4H25.6ZM25.6 49V50.8V25.6V36.535V36.4V49ZM29.2 45.4C29.2 45.91 29.3728 46.3378 29.7184 46.6834C30.064 47.029 30.4912 47.2012 31 47.2H36.535C36.625 46.57 36.7678 45.955 36.9634 45.355C37.159 44.755 37.3762 44.17 37.615 43.6H31C30.49 43.6 30.0622 43.7728 29.7166 44.1184C29.371 44.464 29.1988 44.8912 29.2 45.4ZM29.2 38.2C29.2 38.71 29.3728 39.1378 29.7184 39.4834C30.064 39.829 30.4912 40.0012 31 40H40.18C41.14 39.1 42.2128 38.35 43.3984 37.75C44.584 37.15 45.8512 36.745 47.2 36.535C46.93 36.475 46.63 36.4372 46.3 36.4216C45.97 36.406 45.67 36.3988 45.4 36.4H31C30.49 36.4 30.0622 36.5728 29.7166 36.9184C29.371 37.264 29.1988 37.6912 29.2 38.2ZM29.2 31C29.2 31.51 29.3728 31.9378 29.7184 32.2834C30.064 32.629 30.4912 32.8012 31 32.8H45.4C45.91 32.8 46.3378 32.6272 46.6834 32.2816C47.029 31.936 47.2012 31.5088 47.2 31C47.2 30.49 47.0272 30.0622 46.6816 29.7166C46.336 29.371 45.9088 29.1988 45.4 29.2H31C30.49 29.2 30.0622 29.3728 29.7166 29.7184C29.371 30.064 29.1988 30.4912 29.2 31ZM49 58C46.51 58 44.3872 57.1222 42.6316 55.3666C40.876 53.611 39.9988 51.4888 40 49C40 46.51 40.8778 44.3872 42.6334 42.6316C44.389 40.876 46.5112 39.9988 49 40C51.49 40 53.6128 40.8778 55.3684 42.6334C57.124 44.389 58.0012 46.5112 58 49C58 51.49 57.1222 53.6128 55.3666 55.3684C53.611 57.124 51.4888 58.0012 49 58Z"
+                            fill="white" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="text-center">
+                    <svg class="mb-2" width="79" height="79" viewBox="0 0 79 79" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="39.5" cy="39.5" r="39.5" fill="#E4002B" />
+                        <path
+                            d="M50.8 48.46V51.7C50.8 51.94 50.89 52.15 51.07 52.33C51.25 52.51 51.46 52.6 51.7 52.6C51.94 52.6 52.15 52.51 52.33 52.33C52.51 52.15 52.6 51.94 52.6 51.7V46.3C52.6 46.06 52.51 45.85 52.33 45.67C52.15 45.49 51.94 45.4 51.7 45.4H46.3C46.06 45.4 45.85 45.49 45.67 45.67C45.49 45.85 45.4 46.06 45.4 46.3C45.4 46.54 45.49 46.75 45.67 46.93C45.85 47.11 46.06 47.2 46.3 47.2H49.54L45.13 51.61C44.95 51.79 44.86 52 44.86 52.24C44.86 52.48 44.95 52.69 45.13 52.87C45.31 53.05 45.52 53.14 45.76 53.14C46 53.14 46.21 53.05 46.39 52.87L50.8 48.46ZM25.6 54.4C24.61 54.4 23.7622 54.0472 23.0566 53.3416C22.351 52.636 21.9988 51.7888 22 50.8V25.6C22 24.61 22.3528 23.7622 23.0584 23.0566C23.764 22.351 24.6112 21.9988 25.6 22H50.8C51.79 22 52.6378 22.3528 53.3434 23.0584C54.049 23.764 54.4012 24.6112 54.4 25.6V37.66C53.83 37.39 53.245 37.1572 52.645 36.9616C52.045 36.766 51.43 36.6238 50.8 36.535V25.6H25.6V50.8H36.49C36.58 51.46 36.7228 52.09 36.9184 52.69C37.114 53.29 37.3462 53.86 37.615 54.4H25.6ZM25.6 49V50.8V25.6V36.535V36.4V49ZM29.2 45.4C29.2 45.91 29.3728 46.3378 29.7184 46.6834C30.064 47.029 30.4912 47.2012 31 47.2H36.535C36.625 46.57 36.7678 45.955 36.9634 45.355C37.159 44.755 37.3762 44.17 37.615 43.6H31C30.49 43.6 30.0622 43.7728 29.7166 44.1184C29.371 44.464 29.1988 44.8912 29.2 45.4ZM29.2 38.2C29.2 38.71 29.3728 39.1378 29.7184 39.4834C30.064 39.829 30.4912 40.0012 31 40H40.18C41.14 39.1 42.2128 38.35 43.3984 37.75C44.584 37.15 45.8512 36.745 47.2 36.535C46.93 36.475 46.63 36.4372 46.3 36.4216C45.97 36.406 45.67 36.3988 45.4 36.4H31C30.49 36.4 30.0622 36.5728 29.7166 36.9184C29.371 37.264 29.1988 37.6912 29.2 38.2ZM29.2 31C29.2 31.51 29.3728 31.9378 29.7184 32.2834C30.064 32.629 30.4912 32.8012 31 32.8H45.4C45.91 32.8 46.3378 32.6272 46.6834 32.2816C47.029 31.936 47.2012 31.5088 47.2 31C47.2 30.49 47.0272 30.0622 46.6816 29.7166C46.336 29.371 45.9088 29.1988 45.4 29.2H31C30.49 29.2 30.0622 29.3728 29.7166 29.7184C29.371 30.064 29.1988 30.4912 29.2 31ZM49 58C46.51 58 44.3872 57.1222 42.6316 55.3666C40.876 53.611 39.9988 51.4888 40 49C40 46.51 40.8778 44.3872 42.6334 42.6316C44.389 40.876 46.5112 39.9988 49 40C51.49 40 53.6128 40.8778 55.3684 42.6334C57.124 44.389 58.0012 46.5112 58 49C58 51.49 57.1222 53.6128 55.3666 55.3684C53.611 57.124 51.4888 58.0012 49 58Z"
+                            fill="white" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-color-fondo ">
+        <div class="container text-center px-4 py-5 md:p-5">
+            <h1 class="font-bold text-gris-p mb-3 ">Lorem Ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet urna dui, eget consequat
+                odio ornare in. Pellentesque ut elit fermentum, interdum augue vel, ornare ante</p>
+            <button class="btn--primary" onclick="showModal()">Ingresar a Modex</button>
+        </div>
+    </section>
+    <footer class="">
+        <div class="container d-flex align-items-center justify-content-between mx-auto w-100 h-100 grid-col-2">
+            <div class="text-center">
+                <img src="img/logo_promperu.png" alt="">
+            </div>
+            <div class="d-block d-md-flex gap-5">
+                <a href="#" class="d-block enlace--footer mb-2 mb-md-0">Condiciones de Uso</a>
+                <a href="#" class="d-block enlace--footer mb-2 mb-md-0">Política de privacidad</a>
+                <a href="#" class="d-block enlace--footer mb-2 mb-md-0">Política de cookies</a>
+                <a href="#" class="d-block enlace--footer mb-2 mb-md-0">Contáctanos</a>
+            </div>
+            <div class="d-flex justify-content-center last">
+                <i class="fab fa-linkedin fa-xl text-white me-4"></i>
+                <i class="fab fa-facebook-f fa-xl text-white me-4"></i>
+                <i class="fab fa-youtube fa-xl text-white me-4"></i>
+                <i class="fab fa-twitter fa-xl text-white"></i>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- MODAL -->
+<div id="myModal" class="modal">
+
+    <!-- Contenido de las pestañas -->
+    <div class="modal-content">
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'login')">Inicio de sesión</button>
+            <button class="tablinks" onclick="openTab(event, 'register')">Registro</button>
+        </div>
+        <div id="login" class="tabcontent">
+            <h2>Iniciar sesión</h2>
+            <!-- Contenido del inicio de sesión -->
+        </div>
+        <div id="register" class="tabcontent">
+            <h2>Registro</h2>
+            <!-- Contenido del registro -->
+        </div>
+    </div>
+
+</div>
+<script src="js/modal.js"></script>
