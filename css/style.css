@@ -4,67 +4,85 @@
     --header-color: #656363;
     --gris-color: #626262;
 }
-@font-face{
+
+@font-face {
     font-family: 'Bree Bold Obloque';
     src: url('../font/Bree\ Bold\ Oblique.otf');
 }
-@font-face{
+
+@font-face {
     font-family: 'Bree Bold';
     src: url('../font/Bree\ Bold.otf');
 }
-@font-face{
+
+@font-face {
     font-family: 'Bree ExtraBold Oblique';
     src: url('../font/Bree\ ExtraBold\ Oblique.otf');
 }
-@font-face{
+
+@font-face {
     font-family: 'Bree ExtraBold';
     src: url('../font/Bree\ ExtraBold.otf');
 }
-@font-face{
+
+@font-face {
     font-family: 'Bree Light Oblique';
     src: url('../font/Bree\ Light\ Oblique.otf');
 }
-@font-face{
+
+@font-face {
     font-family: 'Bree Light';
     src: url('../font/Bree\ Light.otf');
 }
-@font-face{
+
+@font-face {
     font-family: 'Bree Oblique';
     src: url('../font/Bree\ Oblique.otf');
 }
-@font-face{
+
+@font-face {
     font-family: 'Bree Regular';
     src: url('../font/Bree\ Regular.otf');
 }
-.font-bold{
+
+.font-bold {
     font-family: 'Bree Bold';
     font-weight: 700;
 }
-p, span .font-secundary{
+
+p,
+span .font-secundary {
     font-family: 'Montserrat';
     color: #000000;
 }
-span{
+
+span {
     font-weight: 700;
 }
-.max-w-sm{
+
+.max-w-sm {
     max-width: 390px;
 }
-.text-gris-p{
+
+.text-gris-p {
     color: var(--gris-color);
 }
-.bg-color-fondo{
+
+.bg-color-fondo {
     background-color: var(--fondo-color);
 }
-header{
+
+header {
     background-color: var(--header-color);
     height: 76px;
 }
-footer{
+
+footer {
     background-color: var(--primary-color);
     height: 70px;
 }
-.btn--primary{
+
+.btn--primary {
     background-color: var(--primary-color);
     border: none;
     width: 259px;
@@ -79,7 +97,8 @@ footer{
     text-align: center;
     color: #FFFFFF;
 }
-.enlace--footer{
+
+.enlace--footer {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -88,11 +107,13 @@ footer{
     color: #FFFFFF;
     text-decoration: none;
 }
-.enlace--footer:hover{
+
+.enlace--footer:hover {
     text-decoration: none;
     color: #FFFFFF;
 }
-.bg__hero{
+
+.bg__hero {
     background-image: url("../img/bg_hero_.png");
     height: 627px;
     background-size: cover;
@@ -100,20 +121,21 @@ footer{
     width: 100%;
     background-repeat: no-repeat;
 }
-@media (max-width: 767px){
-    .bg__hero{
+
+@media (max-width: 767px) {
+    .bg__hero {
         background-image: url("../img/img_hero_mobile.png");
         height: 560px;
         background-position: center center;
     }
-    .img_modex_planex{
+    .img_modex_planex {
         width: 325px;
         height: 238px;
     }
-    footer{
+    footer {
         height: 238px;
     }
-    .grid-col-2{
+    .grid-col-2 {
         display: grid !important;
         grid-template-columns: 1fr 1fr;
     }
@@ -121,7 +143,8 @@ footer{
         grid-column: 1 / span 2;
     }
 }
-#after-main{
+
+#after-main {
     content: '';
     display: flex;
     min-width: 4px;
@@ -131,7 +154,8 @@ footer{
     padding: 0;
     margin-left: -10px;
 }
-#after-main-horizontal{
+
+#after-main-horizontal {
     content: '';
     display: flex;
     max-width: 37px;
@@ -142,89 +166,55 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*MODAL*/
+
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.4); 
-  }
-  
-  .modal-content {
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
     background-color: #fefefe;
-    margin: 10% auto; 
-    padding: 20px;
+    margin: 10% auto;
     border: 1px solid #888;
-    width: 60%; 
-  }
-  
-  .tab {
+    width: 60%;
+}
+
+.tab {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .tab button {
+}
+
+.tab button {
     background-color: inherit;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 15px;
     transition: 0.3s;
     font-size: 20px;
     width: 50%;
-  }
-  
-  .tab button.active {
-    border-bottom: 2px solid #000;
-  }
-  
-  .tabcontent {
+}
+
+.tab button.active {
+    border-bottom: 4px solid #E4002B;
+}
+
+.tabcontent {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-  }
-  
-  .tabcontent.active {
+}
+
+.tabcontent.active {
     display: block;
-  }
+}
